@@ -7,16 +7,37 @@
   font-style: normal;
 }
 
+.subtitle h2{
+  color:#fff ;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subtitle h3{
+    color: #fd634e;
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align:center;
+}
+
+/* Schedule Table Wrapper */
+
 .schedule-table table thead tr {
   background: #fd634e;
   border: 1px solid black;
 }
 
 .schedule-container {
-  max-width: 1900px; 
-  margin: 0 auto;    
-  padding: 200px;    
-  background-color: #f9f9f9f7; 
+  max-width: 100%; 
+  margin: 0 auto;     
+  background-color: #a2ca28;
   overflow-x: hidden;
 }
 
@@ -42,21 +63,36 @@
     padding: 20px 5px;    
   }
 }
-.subtitle h2{
-  color: #a2ca28;
-  font-size: 35px;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 60px;
+
+.schedule-table table {
+  width: 75%; 
+  height: 500px; 
+  background-color: #f9f9f9; /* Background color for table only */
+  margin: 0 auto; /* Center the table if it's not full width */
+  border-collapse: collapse; /* Remove gaps between table cells if needed */
+  overflow: hidden; /* Prevent background overflow */
 }
 
-.subtitle h3{
-    color: #fd634e;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align:center;
+@media (max-width: 1024px) {
+  .schedule-table table {
+    width: 90%;  
+    height: 400px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-table table {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-table table {
+    width: 100%;
+    height: auto;
+    font-size: 14px; 
+  }
 }
 
 .schedule-table table thead th {
@@ -138,7 +174,7 @@
 }
 
 .schedule-table table tbody td .hover span {
-  color: #ffffff;
+  color: #ffffff; 
   font-weight: 600;
   font-size: 18px
 }
@@ -183,6 +219,8 @@
   color: #fff;
   border: 1px solid #29282D
 }
+
+
 
 @media screen and (max-width: 1199px) {
   .schedule-table {
